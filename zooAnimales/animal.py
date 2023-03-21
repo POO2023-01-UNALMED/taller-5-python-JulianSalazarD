@@ -25,7 +25,7 @@ class Animal:
         self._nombre = nombre
 
     def getEdad(self):
-        return self._Edad
+        return self._edad
 
     def setEdad(self, Edad):
         self._edad = edad
