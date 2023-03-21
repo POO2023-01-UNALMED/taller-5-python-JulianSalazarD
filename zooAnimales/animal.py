@@ -1,8 +1,4 @@
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.ave import Ave
-from zooAnimales.reptil import Reptil
-from zooAnimales.pez import Pez
-from zooAnimales.anfibio import Anfibio
+import zooAnimales as zoo
 class Animal:
     _totalAnimales = 0
 
@@ -57,11 +53,11 @@ class Animal:
 
     @staticmethod
     def totalPorTipo():
-        return "Mamiferos: " + zoo.Mamifero.cantidadMamiferos() +\
-                "\nAves: " + zoo.Ave.cantidadAves() +\
-                "\nReptiles: " + zoo.Reptil.cantidadReptiles() +\
-                "\nPeces: " + zoo.Pez.cantidadPeces() +\
-                "\nAnfibios: " + zoo.Anfibio.cantidadAnfibios()
+        return "Mamiferos: " + zoo.mamifero.Mamifero.cantidadMamiferos() +\
+                "\nAves: " + zoo.ave.Ave.cantidadAves() +\
+                "\nReptiles: " + zoo.reptil.Reptil.cantidadReptiles() +\
+                "\nPeces: " + zoo.pez.Pez.cantidadPeces() +\
+                "\nAnfibios: " + zoo.anfibio.Anfibio.cantidadAnfibios()
 
     def __str__(self):
         info = "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+\
