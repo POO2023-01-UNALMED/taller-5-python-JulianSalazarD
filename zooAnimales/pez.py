@@ -48,3 +48,6 @@ class Pez(Animal):
         pez = Pez(nombre, edad, "oceano", genero, "gris", 6)
         cls.bacalaos += 1
         return pez
+
+    def __str__(self):
+        super().__str__()

@@ -45,3 +45,6 @@ class Mamifero(Animal):
         mamifero = Mamifero(nombre, edad, "selva", genero, True, 4)
         cls.leones += 1
         return mamifero
+
+    def __str__(self):
+        super().__str__()

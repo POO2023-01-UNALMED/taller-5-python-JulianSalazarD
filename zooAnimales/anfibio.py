@@ -48,3 +48,6 @@ class Anfibio(Animal):
         anfibio = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
         cls.salamandras += 1
         return anfibio
+
+    def __str__(self):
+        super().__str__()

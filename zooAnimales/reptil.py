@@ -48,3 +48,6 @@ class Reptil(Animal):
         reptil = Reptil(nombre, edad, "jungla", genero, "blanco", 1)
         cls.serpientes += 1
         return reptil
+
+    def __str__(self):
+        super().__str__()

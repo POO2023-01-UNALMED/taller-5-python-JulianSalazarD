@@ -42,3 +42,6 @@ class Ave(Animal):
         ave = Ave(nombre, edad, "montanas", genero, "blanco y amarillo")
         cls.aguilas += 1
         return ave
+
+    def __str__(self):
+        super().__str__()
