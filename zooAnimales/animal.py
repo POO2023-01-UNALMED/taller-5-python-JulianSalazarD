@@ -61,7 +61,7 @@ class Animal:
 
     def toString(self):
         info = "Mi nombre es "+self._nombre+", tengo una edad de "+str(self._edad)+", habito en "+self._habitat+\
-        " y mi genero es "+genero;
+        " y mi genero es "+self._genero;
         if (self._zona != None):
             return info+", la zona en la que me ubico es: "+self._zona.getNombre()+\
                 ", en el "+self._zona.getZoo().getNombre();
