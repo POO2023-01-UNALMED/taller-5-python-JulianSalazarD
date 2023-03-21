@@ -60,11 +60,11 @@ class Animal:
                 "\nAnfibios: " + str(zoo.anfibio.Anfibio.cantidadAnfibios())
 
     def toString(self):
-        info = "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+\
+        info = "Mi nombre es "+self._nombre+", tengo una edad de "+self._edad+", habito en "+self._habitat+\
         " y mi genero es "+genero;
-        if (zona != None):
-            return info+", la zona en la que me ubico es: "+zona.getNombre()+\
-                ", en el "+zona.getZoo().getNombre();
+        if (self._zona != None):
+            return info+", la zona en la que me ubico es: "+self._zona.getNombre()+\
+                ", en el "+self._zona.getZoo().getNombre();
 
         else: return info
 
