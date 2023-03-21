@@ -27,7 +27,7 @@ class Animal:
     def getEdad(self):
         return self._edad
 
-    def setEdad(self, Edad):
+    def setEdad(self, edad):
         self._edad = edad
 
     def getHabitat(self):
