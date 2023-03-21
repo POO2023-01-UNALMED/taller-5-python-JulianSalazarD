@@ -59,7 +59,7 @@ class Animal:
                 "\nPeces: " + str(zoo.pez.Pez.cantidadPeces()) +\
                 "\nAnfibios: " + str(zoo.anfibio.Anfibio.cantidadAnfibios())
 
-    def __str__(self):
+    def toString(self):
         info = "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+\
         " y mi genero es "+genero;
         if (zona != None):
