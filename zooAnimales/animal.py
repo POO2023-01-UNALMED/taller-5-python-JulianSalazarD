@@ -51,7 +51,8 @@ class Animal:
     def movimiento(self):
         return "desplazarse"
 
-    def totalPorTipo(self):
+    @staticmethod
+    def totalPorTipo():
         return "Mamiferos: " + Mamifero.cantidadMamiferos() +\
                 "\nAves: " + Ave.cantidadAves() +\
                 "\nReptiles: " + Reptil.cantidadReptiles() +\
