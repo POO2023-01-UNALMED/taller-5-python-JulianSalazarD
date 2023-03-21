@@ -53,14 +53,14 @@ class Animal:
 
     @staticmethod
     def totalPorTipo():
-        return "Mamiferos: " + str(zoo.mamifero.Mamifero.cantidadMamiferos()) +\
-                "\nAves: " + str(zoo.ave.Ave.cantidadAves()) +\
-                "\nReptiles: " + str(zoo.reptil.Reptil.cantidadReptiles()) +\
-                "\nPeces: " + str(zoo.pez.Pez.cantidadPeces()) +\
-                "\nAnfibios: " + str(zoo.anfibio.Anfibio.cantidadAnfibios())
+        return "Mamiferos : " + str(zoo.mamifero.Mamifero.cantidadMamiferos()) +\
+                "\nAves : " + str(zoo.ave.Ave.cantidadAves()) +\
+                "\nReptiles : " + str(zoo.reptil.Reptil.cantidadReptiles()) +\
+                "\nPeces : " + str(zoo.pez.Pez.cantidadPeces()) +\
+                "\nAnfibios : " + str(zoo.anfibio.Anfibio.cantidadAnfibios())
 
     def toString(self):
-        info = "Mi nombre es "+self._nombre+", tengo una edad de "+self._edad+", habito en "+self._habitat+\
+        info = "Mi nombre es "+self._nombre+", tengo una edad de "+str(self._edad)+", habito en "+self._habitat+\
         " y mi genero es "+genero;
         if (self._zona != None):
             return info+", la zona en la que me ubico es: "+self._zona.getNombre()+\
